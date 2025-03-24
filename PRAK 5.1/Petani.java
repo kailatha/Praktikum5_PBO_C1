@@ -1,3 +1,8 @@
+/*Nama  : Kaila Talitha Putri 
+ *Nim   : 24060123140179
+  Kelas : C
+ */
+
 import java.time.LocalDate;
 
 class Petani extends Manusia implements Pajak {
