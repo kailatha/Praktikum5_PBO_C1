@@ -1,0 +1,3 @@
+interface Pajak {
+    double hitungPajak();
+}
