@@ -30,7 +30,7 @@ class Petani extends Manusia implements Pajak {
     @Override
     public int hitungMasaKerja() {
         int now = LocalDate.now().getYear();
-        return (now - tglMulaiKerja.getYear());
+        return (now - tglMulaiKerja.getYear()) + 1; //NIM digit ke 12 yaitu 1
     }
 
     @Override
