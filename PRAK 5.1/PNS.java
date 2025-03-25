@@ -31,8 +31,7 @@ class PNS extends Manusia implements Pajak {
     @Override
     public int hitungMasaKerja() {
         int now = LocalDate.now().getYear();
-        int A = Character.getNumericValue(nip.charAt(13));
-        return (now - tglMulaiKerja.getYear()) + A;
+        return (now - tglMulaiKerja.getYear()) + 9; //NIM digit terakhir ke 14 yaitu 9
     }
 
     @Override
