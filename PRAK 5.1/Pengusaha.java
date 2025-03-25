@@ -26,8 +26,7 @@ class Pengusaha extends Manusia implements Pajak {
     @Override
     public int hitungMasaKerja() {
         int now = LocalDate.now().getYear();
-        int B = Character.getNumericValue(npwp.charAt(12));
-        return (now - tglMulaiKerja.getYear()) + B;
+        return (now - tglMulaiKerja.getYear()) + 7; //NIM digit ke 13 yaitu 7
     }
 
     @Override
